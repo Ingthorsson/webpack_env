@@ -1,0 +1,14 @@
+{
+  "name": "webpack_5_env",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode production"
+  },
+  "author": "Stefan Ingthorsson",
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^5.73.0",
+    "webpack-cli": "^4.10.0"
+  }
+}
