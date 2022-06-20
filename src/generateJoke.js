@@ -1,6 +1,16 @@
 
+import axios from 'axios';
+import axioos from 'axios'
+
 function generateJoke() {
-    return "I don't trust staiirs the're always up to something oook"
+    const config = {
+        headers: {
+            Accept: 'application/json',
+        }
+    }
+    axios.get('https://icanhazdadjoke.com', config).then(res => {
+        document.getElementById('joke').innerHTML = res.data.joke
+    })
 }
 
 export default generateJoke;
